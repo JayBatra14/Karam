@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+            >
+
+    
+    
+    <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="code">
+             <m:MaterialTitle title="SKILLMEN PORTAL"  textColor="GREEN_DARKEN_1" paddingTop="50" paddingLeft="500"></m:MaterialTitle>
+            <ma:masonry.MaterialMasonry marginLeft="200" >
+             
+                <m:MaterialColumn ui:field="b" grid="l5 s12 m6" backgroundColor="RED_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0"  textAlign="CENTER">
+                    <m:MaterialIcon iconType="HOURGLASS_EMPTY" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="Pending Request" bottom="0" backgroundColor="RED_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn ui:field="b1" grid="l5 s12 m6" backgroundColor="GREEN_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="EVENT_AVAILABLE" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="History" bottom="0" backgroundColor="GREEN_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+               
+                
+                <m:MaterialColumn ui:field="b2" grid="l5 s12 m6" backgroundColor="PURPLE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER" >
+                    <m:MaterialIcon iconType="NOTE_ADD" iconColor="WHITE" iconSize="MEDIUM" marginTop="50"   />
+                    <m:MaterialLabel text="Add Plan" bottom="0" backgroundColor="PURPLE_DARKEN_1" layoutPosition="ABSOLUTE" padding="12"  fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+               
+              
+                
+                <m:MaterialColumn ui:field="b3" grid="l5 s12 m6" backgroundColor="BROWN_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="POWER_SETTINGS_NEW" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="Log Out" bottom="0" backgroundColor="BROWN_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+              
+            </ma:masonry.MaterialMasonry>
+        </m:MaterialRow>
+           </m:MaterialPanel>
+</ui:UiBinder>

@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client"
+       xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
+       
+  <m:MaterialContainer  ui:field="aa">     
+   <m:MaterialPanel>
+    <g:HTMLPanel>
+    
+  
+	
+
+     <center>
+     <m:MaterialTitle title="ADD PLAN"></m:MaterialTitle>
+	 <m:MaterialTextBox ui:field="mc" label=" Minimum Charge" width="45%"/>
+	 <m:MaterialTextBox ui:field="uc" label="Urgent Charge" width="45%"/> 
+	
+     
+     
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialListBox ui:field="s" placeholder="Select Service" width="45%">
+        <m.html:Option text="Plumber"/>
+        <m.html:Option text="Carpenter"/>
+        <m.html:Option text="Mason"/>
+        <m.html:Option text="Sweeper"/>
+        <m.html:Option text="Electrician"/>
+        <m.html:Option text="Painter"/>
+        <m.html:Option text="Mechanic"/>
+      </m:MaterialListBox>
+      </m:MaterialRow>
+      
+       <m:MaterialButton ui:field="sub" backgroundColor="GREEN_DARKEN_1" textColor="WHITE"  waves="LIGHT" text="Submit" width="45%"/> 
+     </center>
+  </g:HTMLPanel>
+      </m:MaterialPanel>
+   </m:MaterialContainer>
+</ui:UiBinder>

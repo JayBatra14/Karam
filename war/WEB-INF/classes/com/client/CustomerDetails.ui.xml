@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client">
+           
+           
+           <m:MaterialContainer ui:field="x">
+    
+            <m:MaterialTitle textColor="GREEN_DARKEN_1" title="Customer Details" paddingLeft="520"  />
+            
+             <m:MaterialRow addStyleNames="code" paddingLeft="400">
+            <m:MaterialTextBox ui:field="name" readOnly="true" grid="s12" label="Name" width="40%"></m:MaterialTextBox>
+            <m:MaterialTextBox  ui:field="add" readOnly="true"  label="Address" width="40%" grid="s12"></m:MaterialTextBox>
+            <m:MaterialTextBox ui:field="mob" readOnly="true" label="mobile no." width="40%" grid="s12"></m:MaterialTextBox>
+            <m:MaterialTextBox ui:field="email" readOnly="true" label="Email id"  width="40%" grid="s12"></m:MaterialTextBox>
+                </m:MaterialRow>
+                <m:MaterialRow paddingLeft="500">
+                <m:MaterialColumn>
+                <m:MaterialButton ui:field="app" text="Approve" backgroundColor="GREEN_DARKEN_1" textColor="WHITE" width="100%"></m:MaterialButton>
+                </m:MaterialColumn>
+                <m:MaterialColumn>
+                <m:MaterialButton ui:field="can" text="Cancel" backgroundColor="GREEN_DARKEN_1" textColor="WHITE" width="100%"></m:MaterialButton>
+                </m:MaterialColumn>
+                </m:MaterialRow>
+    </m:MaterialContainer>
+</ui:UiBinder>

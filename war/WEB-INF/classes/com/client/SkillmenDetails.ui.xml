@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client">
+           
+           
+           <m:MaterialContainer ui:field="x">
+            <m:MaterialTitle textColor="GREEN_DARKEN_1" title="Skillmen Details" paddingLeft="520"  />
+            
+             <m:MaterialRow addStyleNames="code" paddingLeft="400">
+            <m:MaterialTextBox ui:field="name" readOnly="true" grid="s12" label="Name" width="40%"></m:MaterialTextBox>
+            <m:MaterialTextBox  ui:field="add" readOnly="true"  label="Address" width="40%" grid="s12"></m:MaterialTextBox>
+            <m:MaterialTextBox ui:field="mob" readOnly="true" label="Mobile no." width="40%" grid="s12"></m:MaterialTextBox>
+            <m:MaterialTextBox ui:field="email" readOnly="true" label="Email id"  width="40%" grid="s12"></m:MaterialTextBox>
+            <m:MaterialTextBox ui:field="mc" readOnly="true" label="Minimum Charges"  width="40%" grid="s12"></m:MaterialTextBox>
+            <m:MaterialTextBox ui:field="uc" readOnly="true" label="Urgent Charges"  width="40%" grid="s12"></m:MaterialTextBox>
+                </m:MaterialRow>
+                <m:MaterialRow >
+                <m:MaterialColumn paddingLeft="410">
+                <m:MaterialDatePicker ui:field="dp" placeholder="Date" selectionType="YEAR" width="60%" />
+                </m:MaterialColumn>
+                <m:MaterialColumn paddingLeft="170">
+                <ma:timepicker.MaterialTimePicker ui:field="tp"  placeholder="Snooze Time" width="60%" />
+                </m:MaterialColumn>
+                </m:MaterialRow>
+                <m:MaterialRow paddingLeft="500">
+                <m:MaterialButton ui:field="book" text="Book" backgroundColor="GREEN_DARKEN_1" textColor="BLACK" width="35%"></m:MaterialButton>
+                </m:MaterialRow>
+               
+    </m:MaterialContainer>
+</ui:UiBinder>

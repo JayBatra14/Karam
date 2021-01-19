@@ -1,0 +1,111 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client"
+       xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
+          <ui:style gss="true"> 
+      .b{
+	text-decoration: underline;
+    text-decoration-color: green;
+    font-family: Arial, Helvetica, sans-serif;	
+	}
+            </ui:style>
+           
+<g:HTMLPanel> 
+
+  <m:MaterialContainer  ui:field="aa">     
+   <m:MaterialPanel>
+   
+    <m:MaterialCard marginBottom="0" marginTop="50" marginLeft="400" marginRight="450" backgroundColor="WHITE" waves="GREEN" >
+    <m:MaterialCardContent paddingLeft="15">
+    <m:MaterialRow paddingLeft="0" addStyleNames="{style.b}" >
+     <m:MaterialTitle  title="CUSTOMER REGISTRATION"  textColor="GREEN_DARKEN_1" />
+     </m:MaterialRow>
+	
+
+   <m:MaterialRow paddingLeft="80" addStyleNames="code">
+	 <m:MaterialTextBox ui:field="name" fieldType="OUTLINED" label=" Name / नाम"  width="75%"/>
+	 </m:MaterialRow>
+	 <m:MaterialRow paddingLeft="80" addStyleNames="code">
+	 <m:MaterialTextBox ui:field="add" fieldType="OUTLINED" label="Address / पता"   width="75%"/>
+	 </m:MaterialRow>
+	 <m:MaterialRow paddingLeft="80" addStyleNames="code"> 
+	 <m:MaterialTextBox ui:field="mob" fieldType="OUTLINED" length="10" label="Mobile No. / मोबाइल नंबर"  width="75%"/>
+	 </m:MaterialRow>
+	 <m:MaterialRow paddingLeft="80" addStyleNames="code"> 
+	 <m:MaterialTextBox ui:field="aadhar" fieldType="OUTLINED" length="12" label="Aadhaar No. / आधार नंबर"  width="75%"/>
+	 </m:MaterialRow>
+	 
+	<m:MaterialRow paddingLeft="80" addStyleNames="code">
+	 <m:MaterialListBox ui:field="gen" textColor="GREEN_DARKEN_1" fieldType="OUTLINED" placeholder="GENDER / लिंग" width="75%" >
+	 <m.html:Option text="MALE"/>
+        <m.html:Option text="FEMALE"/>
+        <m.html:Option text="OTHERS"/>
+        </m:MaterialListBox>
+	</m:MaterialRow>
+	 
+    <m:MaterialRow paddingLeft="80" addStyleNames="code">
+        <m:MaterialListBox ui:field="city" textColor="GREEN_DARKEN_1" fieldType="OUTLINED" placeholder="CITY / शहर"  width="75%">
+        <m.html:Option text="AGRA"/>
+        <m.html:Option text="MATHURA"/>
+        <m.html:Option text="KHERAGARH"/>
+        <m.html:Option text="DEHRADUN"/>
+        <m.html:Option text="PORT BLAIR"/>
+        <m.html:Option text="GOA"/>
+        <m.html:Option text="JAIPUR"/>
+        <m.html:Option text="MADRAS"/>
+        <m.html:Option text="MUMBAI"/>
+        <m.html:Option text="KHUJRAO"/>
+      </m:MaterialListBox>
+      </m:MaterialRow>
+      
+       <m:MaterialRow paddingLeft="80" addStyleNames="code">
+        <m:MaterialListBox ui:field="dis" textColor="GREEN_DARKEN_1" fieldType="OUTLINED" placeholder="DISTRICT / जिला"  width="75%">
+        <m.html:Option text="AGRA"/>
+        <m.html:Option text="MATHURA"/>
+        <m.html:Option text="DEHRADUN"/>
+        <m.html:Option text="PORT BLAIR"/>
+        <m.html:Option text="GOA"/>
+        <m.html:Option text="JAIPUR"/>
+        <m.html:Option text="MADRAS"/>
+        <m.html:Option text="MUMBAI"/>
+        <m.html:Option text="KHUJRAO"/>
+      </m:MaterialListBox>
+      </m:MaterialRow>
+     
+     
+      <m:MaterialRow paddingLeft="80" addStyleNames="code">
+        <m:MaterialListBox ui:field="state" textColor="GREEN_DARKEN_1" fieldType="OUTLINED" placeholder="STATE / राज्य"  width="75%">
+        <m.html:Option text="UTTAR PRADESH"/>
+        <m.html:Option text="UTTRANCHAL"/>
+        <m.html:Option text="ANDAMAN AND NICOBAR"/>
+        <m.html:Option text="GOA"/>
+        <m.html:Option text="RAJESTHAN"/>
+        <m.html:Option text="TAMIL NADU"/>
+        <m.html:Option text="MAHARASHTRA"/>
+        <m.html:Option text="MADHYA PRADESH"/>
+      </m:MaterialListBox>
+      </m:MaterialRow>
+      
+   
+ <m:MaterialRow paddingLeft="80" addStyleNames="code">
+  <m:MaterialTextBox ui:field="email" fieldType="OUTLINED" type="EMAIL" label="Email / ईमेल"  width="75%"/>
+</m:MaterialRow>
+	 <m:MaterialRow paddingLeft="80" addStyleNames="code">
+	 
+	 <m:MaterialTextBox ui:field="pass" fieldType="OUTLINED" type="PASSWORD" label="Password / पासवर्ड"  width="75%"/>
+	 </m:MaterialRow> 
+	 <m:MaterialRow paddingLeft="80" addStyleNames="code">
+	 <m:MaterialButton ui:field="submit" backgroundColor="GREEN_DARKEN_1" textColor="WHITE"  waves="LIGHT" text="Submit" width="75%"/>
+	 </m:MaterialRow> 
+	 </m:MaterialCardContent>
+         
+
+          </m:MaterialCard>
+   
+      </m:MaterialPanel>
+   </m:MaterialContainer>
+  
+   </g:HTMLPanel>
+</ui:UiBinder>

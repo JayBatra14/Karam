@@ -1,0 +1,49 @@
+<!DOCTYPE UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:client="urn:import:gwt.material.design.addins.client" 
+xmlns:m.addins="urn:import:gwt.material.design.addins.client" 
+xmlns:ma="urn:import:gwt.material.design.addins.client" 
+xmlns:m="urn:import:gwt.material.design.client.ui" 
+xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+xmlns:ui="urn:ui:com.google.gwt.uibinder">
+
+
+<g:HTMLPanel>
+
+<m:MaterialHeader ui:field="header">
+<m:MaterialNavBar ui:field="navBar" backgroundColor="WHITE" activates="sidenav" height="auto">
+<m:MaterialNavBrand textColor="GREEN_DARKEN_1" text="SERVICE HISTORY" paddingLeft="30" fontSize="2.2em"/>
+<m:MaterialNavSection height="25" paddingTop="50"> </m:MaterialNavSection>
+<m:MaterialNavContent>
+
+
+<m:MaterialTab ui:field="tabFit" backgroundColor="WHITE" indicatorColor="GREEN_DARKEN_1" >
+<m:MaterialTabItem flex="NONE" waves="LIGHT">
+<m:MaterialLink ui:field="app" textColor="GREEN_DARKEN_1" text="Approved Request" href="#tabFit1"/>
+</m:MaterialTabItem>
+<m:MaterialTabItem flex="NONE" waves="LIGHT">
+<m:MaterialLink ui:field="can" textColor="GREEN_DARKEN_1" text="Cancelled Request" href="#tabFit2"/>
+</m:MaterialTabItem>
+</m:MaterialTab>
+</m:MaterialNavContent>
+</m:MaterialNavBar>
+</m:MaterialHeader>
+
+
+<m:MaterialColumn  grid="s12" m:id="tabFit1">
+<m:MaterialRow  addStyleNames="code">
+<m:MaterialCollection  ui:field="mc">
+       </m:MaterialCollection>
+</m:MaterialRow>
+</m:MaterialColumn>
+
+
+<m:MaterialColumn grid="s12" m:id="tabFit2">
+<m:MaterialRow addStyleNames="code">
+<m:MaterialCollection ui:field="mc1">
+       </m:MaterialCollection>
+</m:MaterialRow>
+</m:MaterialColumn> 
+
+</g:HTMLPanel>
+</ui:UiBinder>

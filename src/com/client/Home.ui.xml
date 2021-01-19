@@ -1,0 +1,110 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m='urn:import:gwt.material.design.client.ui'
+	xmlns:ma="urn:import:gwt.material.design.addins.client">
+	<ui:style gss="true">
+	body {
+		background: white;
+	}
+	
+	 .customFooter{
+      padding-left: 0 !important;
+      margin-bottom: 0px;
+    }
+	
+	
+	 
+	</ui:style>
+	<g:HTMLPanel>
+	
+	
+	
+	<m:MaterialPanel>
+		<m:MaterialHeader ui:field="header">
+			<m:MaterialNavBar ui:field="navBar" height="auto"
+				activates="sidenav" backgroundColor="WHITE">
+					<m:MaterialNavBrand fontSize="3.2em"
+					paddingLeft="60" text="KARAM" textColor="GREEN_DARKEN_1" />
+				
+				<m:MaterialNavSection height="25" paddingTop="50" >
+				</m:MaterialNavSection>
+				<m:MaterialNavContent>
+				
+ 
+					<m:MaterialTab ui:field="tab"
+						indicatorColor="GREEN_DARKEN_1" backgroundColor="WHITE" >
+						<m:MaterialTabItem waves="GREEN">
+							<m:MaterialLink ui:field="home" fontSize="1.3em" text="HOME" href="#tab1"
+								textColor="GREEN_DARKEN_1" />
+						</m:MaterialTabItem >
+						<m:MaterialTabItem waves="GREEN" >
+							<m:MaterialLink  ui:field="login" fontSize="1.3em" text="LOGIN" href="#tab7"
+								textColor="GREEN_DARKEN_1" />
+						</m:MaterialTabItem>
+						
+						
+						<m:MaterialTabItem waves="GREEN">
+							<m:MaterialLink  ui:field="registration" fontSize="1.3em" text="REGISTRATION" href="#tab2"
+								textColor="GREEN_DARKEN_1" />
+						</m:MaterialTabItem>
+
+						<m:MaterialTabItem waves="GREEN">
+							<m:MaterialLink ui:field="feed" fontSize="1.3em" text="FEEDBACK" href="#tab4"
+								textColor="GREEN_DARKEN_1" />
+						</m:MaterialTabItem>
+						<m:MaterialTabItem waves="GREEN">
+							<m:MaterialLink ui:field="contact" fontSize="1.3em" text="CONTACT" href="#tab5"
+								textColor="GREEN_DARKEN_1" />
+						</m:MaterialTabItem>
+						<m:MaterialTabItem waves="GREEN">
+							<m:MaterialLink ui:field="aboutus" fontSize="1.3em" text="ABOUT US" href="#tab6"
+								textColor="GREEN_DARKEN_1" />
+						</m:MaterialTabItem>
+					</m:MaterialTab>
+				</m:MaterialNavContent>
+			</m:MaterialNavBar>
+		</m:MaterialHeader>
+		
+		
+		<m:MaterialContainer   ui:field="aa" height="500px"
+			paddingTop="20">
+			
+		
+		<m:MaterialSlider ui:field="ss" fullscreen="false">
+		
+		<m:MaterialSlideItem backgroundColor="WHITE">
+          <m:MaterialImage url="skillman.png" width="260px" />
+          <m:MaterialSlideCaption textAlign="RIGHT">
+            <m:MaterialTitle textColor="GREEN_DARKEN_1" title="SERVICES AT YOUR DOOR STEPS."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+        
+          <m:MaterialSlideItem backgroundColor="WHITE" >
+          <m:MaterialImage url="plumber.png" width="270px"/>
+          <m:MaterialSlideCaption textAlign="CENTER">
+            <m:MaterialTitle textColor="GREEN_DARKEN_1" title="SCHEDULE SERVICES ACCORDING TO YOUR COMFORT."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+    
+        
+        <m:MaterialSlideItem backgroundColor="WHITE">
+          <m:MaterialImage url="electrician.png" width="530px"/>
+          <m:MaterialSlideCaption textAlign="RIGHT">
+            <m:MaterialTitle textColor="GREEN_DARKEN_1" title="CHOOSE THE SKILLMEN BASED ON CUSTOMER RATING."  />
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+
+            <m:MaterialSlideItem backgroundColor="WHITE">
+          <m:MaterialImage url="consumer.png" width="300px"/>
+          <m:MaterialSlideCaption textAlign="CENTER">
+            <m:MaterialTitle textColor="GREEN_DARKEN_1" title="KEEP RECORD OF SERVICE STATUS AND HISTORY." />
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+        
+          </m:MaterialSlider>
+  
+       
+		</m:MaterialContainer>
+	</m:MaterialPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

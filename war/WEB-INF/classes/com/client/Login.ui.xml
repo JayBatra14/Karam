@@ -1,0 +1,82 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
+            <ui:style gss="true"> 
+            .b{ 
+	text-decoration: underline;
+	text-decoration-color: green; 
+	}
+            </ui:style>
+           
+<g:HTMLPanel> 
+            <m:MaterialContainer  ui:field="c"  >    
+      <!-- Horizontal Card implementation -->
+      <m:MaterialRow>
+          <m:MaterialCard marginBottom="0" marginTop="50" marginLeft="520" marginRight="300" backgroundColor="WHITE" waves="GREEN" >
+            <m:MaterialCardContent paddingLeft="0">
+                   
+                    <m:MaterialRow paddingLeft="120" paddingTop="0" >
+                    <m:MaterialTitle title="LOGIN" addStyleNames="{style.b}" textColor="GREEN_DARKEN_1"/>
+                      </m:MaterialRow> 
+               <m:MaterialRow paddingLeft="35" paddingTop="0" >  
+              
+             <m:MaterialTextBox ui:field="email" fieldType="OUTLINED" placeholder="Mobile No. / मोबाइल नंबर "    textColor="BLACK"  iconType="ACCOUNT_CIRCLE" iconColor="BLACK" width="95%"  allowBlank="false" addStyleNames="{style.b}" />  
+            
+             </m:MaterialRow>
+             <m:MaterialRow paddingLeft="35" paddingTop="0" >
+		 <m:MaterialTextBox ui:field="password" fieldType="OUTLINED" type="PASSWORD" textColor="BLACK" placeholder="Password / पासवर्ड "    iconType="SECURITY" iconColor="BLACK"  allowBlank="false" width="95%" addStyleNames="{style.b}" />
+		</m:MaterialRow>
+     <m:MaterialRow paddingLeft="90" paddingTop="0">
+     <m:MaterialCheckBox text="Keep me logged in" />
+     </m:MaterialRow>
+     <m:MaterialRow paddingLeft="80" paddingTop="0">
+     <m:MaterialButton  ui:field="button" backgroundColor="GREEN_DARKEN_1" waves="LIGHT" text="LogIn as customer" width="95%" textColor="WHITE" />
+       </m:MaterialRow>
+       <m:MaterialRow paddingLeft="80" paddingTop="0">
+   <m:MaterialButton  ui:field="button1" backgroundColor="GREEN_DARKEN_1" waves="LIGHT" text="LogIn as skillmen" width="95%" textColor="WHITE" />
+      </m:MaterialRow>
+             </m:MaterialCardContent>
+          </m:MaterialCard>
+        </m:MaterialRow>
+          </m:MaterialContainer> 
+     </g:HTMLPanel>
+</ui:UiBinder> 
+<!-- 
+
+<m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Type : OUTLINED" description="Outlined text fields have less visual emphasis than filled text fields, which helps simplify layout in places like forms, where many text fields are placed together."/>
+            <m:MaterialRow>
+                <m:MaterialListValueBox ui:field="outlinedStates" placeholder="Field States" grid="s12 m4"/>
+            </m:MaterialRow>
+            <m:MaterialRow ui:field="outlinedStatesRow">
+                
+                <m:MaterialTextBox fieldType="OUTLINED" label="TextBox" grid="s6" allowBlank="false" autoValidate="true"/>
+              
+                <m:MaterialIntegerBox fieldType="OUTLINED" label="NumberBox" grid="s6" allowBlank="false" autoValidate="true"/>
+               
+                <ma:inputmask.MaterialTextInputMask fieldType="OUTLINED" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" allowBlank="false" autoValidate="true"/>
+                
+                <m:MaterialDatePicker fieldType="OUTLINED"  placeholder="DatePicker" grid="s6" allowBlank="false" autoValidate="true"/>
+                
+                <ma:timepicker.MaterialTimePicker fieldType="OUTLINED" placeholder="TimePicker" grid="s6" allowBlank="false" autoValidate="true"/>
+                
+                <m:MaterialListBox fieldType="OUTLINED" placeholder="Listbox" grid="s6" allowBlank="false" autoValidate="true">
+                    <m:html.Option text="Option 1" />
+                    <m:html.Option text="Option 2" />
+                    <m:html.Option text="Option 3" />
+                </m:MaterialListBox>
+               
+                <ma:combobox.MaterialComboBox ui:field="combo2" fieldType="OUTLINED" label="ComboBox" grid="s6" allowBlank="false" autoValidate="true" />
+                
+                <ma:autocomplete.MaterialAutoComplete ui:field="acOutlined" display="NONE" fieldType="OUTLINED" label="Contacts" grid="s6"/>
+             
+                <m:MaterialTextArea fieldType="OUTLINED" label="Field 6" grid="s6" allowBlank="false" autoValidate="true"/>
+           
+            <m:MaterialRow>
+                <m:MaterialButton text="Validate" ui:field="validateOutlined" />
+            </m:MaterialRow>  -->
+ 
